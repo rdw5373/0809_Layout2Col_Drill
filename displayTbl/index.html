@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Float 2열 레이아웃</title>
+    <title>display: table 2열 레이아웃</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -21,9 +21,13 @@
         </header>
         <!-- header#header -->
 
-        <main id="main">
+        <main id="main" class="dispTbl">
+            <!-- display: table -->
 
-            <nav id="gnb">
+            <div class="dispTblRow">
+                <!-- 감싸주는 요소 만들기 -->
+
+            <nav id="gnb" class="dispTblCell">
                 <ul id="mainMenu">
                     <li class="mainLi">
                         <a href="#">그림의 작가</a>
@@ -44,7 +48,7 @@
             </nav>
             <!-- nav#gnb -->
 
-            <div id="contents">
+            <div id="contents" class="dispTblCell">
                <article>
                    <header class="articleTitle">
                        <h2>
@@ -86,6 +90,9 @@
                 </article>
             </div>
             <!-- div#contents -->
+
+        </div>
+        <!-- div.dispTblRow -->
 
         </main>
         <!-- main#main -->
